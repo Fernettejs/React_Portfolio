@@ -1,0 +1,20 @@
+body {
+    background-color: #010165;
+    margin: 0px;
+  }
+
+input {
+    color: white;
+    background-color: blue;
+    margin: 0;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
