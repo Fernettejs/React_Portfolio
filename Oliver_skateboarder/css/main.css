@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+body{
+    background-color: rgb(56,42,108,0.8);
+}
+
+main{
+    padding: 0px 0px;
+    margin-left: 160px;
+}
+
+section{
+    padding: 100px;
+}
+
+/* HEADER */
+
+.videoContain{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.videoContain video{
+    position: relative;
+    overflow: hidden;
+    min-width: 100vw;
+
+}
+.banner{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.textBox{
+    padding-left: 180px;
+}
+.banner h2{
+    font-size: 3em;
+    color: rgb(95,190,70);
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.banner h2 span{
+    font-size: 1.5em;
+}
+.banner h3{
+    font-size: 1.5em;
+    color: rgb(225, 232, 247);
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    background:rgb(56,42,108);
+    display: inline-block;
+    color: white;
+    margin-top: 80px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* ABOUT */
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(95,190,70);
+    text-shadow:5px 5px rgb(56,42,108);
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBox{
+    padding: 30px;
+}
+.contentBox span{
+    text-align: center;
+}
+.contentBox p{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about bold {
+    color: rgb(95,190,70);
+}
+.w50{
+    min-width: 50%;
+}
+.w50 img{
+    max-width: 100%;
+}
+
+/* TRICKS */
+
+.tricks .contentBox{
+    border-radius: 50px;
+    border: 10px solid rgb(95,190,70);
+    height: 720px;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+}
+.tricks .contentBox img{
+    width: 100%;
+}
+
+
+/* BOARDS */
+
+.boards .content {
+    display: flex;
+}
+.boards img {
+    height: 400px;
+    padding: 30px;
+}
+.boardsText{
+    color: rgb(95,190,70);
+    text-align: center;
+    font-size: 18px;
+}
+/* STICKERS */
+
+/* Don't know why this won't work.
+
+.stickers{
+    background-image: url('resources/images/stickers.jpg');
+} */ 
+
+.stickers h2{
+    padding: 20px;
+}
+.stickers img{
+    width: 100%;
+    padding: 20px;
+    border-radius: 100px;
+    border: 10px solid rgb(95,190,70)
+}

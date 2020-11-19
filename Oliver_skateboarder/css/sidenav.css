@@ -1,0 +1,38 @@
+/* SIDENAV */
+
+.sidenav {
+    min-height: 600px;
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    justify-content: center;
+    text-align: center;
+    top: 50px;
+    left: 0;
+    background-image: url(../resources/images/skateboard_texture.png);
+    /* background-image: linear-gradient(90deg, rgb(31, 31, 31), rgb(44, 44, 44), rgb(31, 31, 31)); */
+    border-radius: 60px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 80px;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 20px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color:white;
+    text-shadow:5px 5px rgb(56,42,108);
+    display: block;
+}
+.sidenav a:hover {
+    color: rgb(95,190,70);
+}
+header .logo{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+
+}
