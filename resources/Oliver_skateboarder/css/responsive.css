@@ -136,6 +136,12 @@
     video{
         right: 120%;
     }
+    .videoContain video{
+        visibility: hidden;
+    }
+    .videoContain{
+        background-color: linear-gradient(rgb(56,42,108), rgb(95,190,70));
+    }
 }
 
 
