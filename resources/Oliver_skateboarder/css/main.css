@@ -76,13 +76,11 @@ section{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    color: #111;
     text-decoration: none;
-}
-.heading h2{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 24px;
     color: rgb(95,190,70);
+    text-shadow:5px 5px rgb(56,42,108);
 }
 .content{
     display: flex;
@@ -94,7 +92,7 @@ section{
 .contentBox span{
     text-align: center;
 }
-.contentBox h3{
+.contentBox p{
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -113,7 +111,7 @@ section{
 .tricks .contentBox{
     border-radius: 50px;
     border: 10px solid rgb(95,190,70);
-    height: 500px;
+    height: 720px;
     overflow: scroll;
     margin: 0;
     padding: 0;
@@ -128,15 +126,14 @@ section{
 .boards .content {
     display: flex;
 }
-.boards .content .boardsBox {
-    flex: 20%;
-    padding: 5px;
-    display: flex;
-
+.boards img {
+    height: 400px;
+    padding: 30px;
 }
 .boardsText{
     color: rgb(95,190,70);
     text-align: center;
+    font-size: 18px;
 }
 /* STICKERS */
 
@@ -151,7 +148,7 @@ section{
 }
 .stickers img{
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     border-radius: 100px;
     border: 10px solid rgb(95,190,70)
 }
