@@ -176,8 +176,8 @@ img{
     flex-wrap: wrap;
 }
 .project .content .projectBox {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     padding: 20px;
     position: relative;
     text-align: center;
@@ -279,10 +279,12 @@ img{
 }
 .blogContent {
     width: 100%;
-    height: 180px;
-    background-color: slategray;
+
+    height: 160px;
+    background-color: rgb(225, 232, 247);
     white-space:nowrap;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 .blogBox {
     display: inline-block;
