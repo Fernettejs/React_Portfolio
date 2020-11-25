@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
     <script src="main.js"></script>
 </head>
 <body>
@@ -21,6 +22,7 @@
         <li><a href="#about" onclick="toggleMenu();">About</a></li>
         <li><a href="#services" onclick="toggleMenu();">Services</a></li>
         <li><a href="#project" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#blog" onclick="toggleMenu();">Blog</a></li>
         <!-- <li><a href="#" onclick="toggleMenu();">Testimonials</a></li> -->
         <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
     </ul>
@@ -46,7 +48,7 @@
     <div class="content">
         <div class="contentBox">
             <h3>This is how I got to where I am.</h3>
-            <p>My family comes before anything. I work hard to be successful in all that I do in order to provide for and protect my family. My path to this has included becoming a United States Marine; two combat deployments to Afghanistan; graduating from the University of Michigan with a Bachelor of Psychology; starting my own LLC with a main presence online; becoming a public safety officer; and now discovering the perfect career as a web developer. </p>
+            <p>My family comes before anything. I work hard to be successful in all that I do in order to provide for and protect my family. My path to this point has included becoming a United States Marine; two combat deployments to Afghanistan; graduating from the University of Michigan with a Bachelor of Psychology; starting my own LLC with its main presence online; becoming a public safety officer; and now discovering the perfect career as a web developer. </p>
             <br>
             <p>I am an efficiency-driven, goal-oriented professional with problem-solving experience under a vast array of high-pressure environments. A self-starter with excellent communication, organizational and analytical skills. Demonstrated leadership skills, mentoring skills, risk assessment and management, and supervisory experience with a team of 26 personnel in the United States Marine Corps. Exceptional ability to carry out work with minimal supervision, attention to detail and the ability to work under strict deadlines. Strong verbal and written communication skills with the ability to interact with all levels of an organization. I have a great interest in what pushes people to be their best in any situation and I strive to come up with solutions to problems and improve myself and others everyday.</p>
             <br>
@@ -69,20 +71,20 @@
         <p>What I can provide for you and your business.</p>
     </div>
     <div class="content">
-        <div class="servicesBox">
+        <div class="servicesBox" id="webDev">
             <img src="resources/images/icon_web_dev.png" alt="">
             <h2>Front End Web Development</h2>
-            <p>HTML, CSS, JavaScript, React and more words that deal with this stuff.</p>
-        </div>
-        <div class="servicesBox">
-            <img src="resources/images/icon_web_design.png" alt="">
-            <h2>Creative Design Mindset</h2>
-            <p>Being able to notice what people love while at the same time thinking outside of the box. I have enjoyed creating since I was a child, as I beleive most of us did. Being able to use that creative mindset is why I do this.</p>
+            <p>Knowledge of HTML, CSS, JavaScript, jQuery, React, Bootstrap, SASS, Wordpress, Git and more.</p>
         </div>
         <div class="servicesBox">
             <img src="resources/images/icon_responsive.png" alt="">
             <h2>Responsive Design</h2>
             <p>Size doesn't matter here. </p>
+        </div>
+        <div class="servicesBox">
+            <img src="resources/images/icon_web_design.png" alt="">
+            <h2>Creative Design Mindset</h2>
+            <p>Being able to notice what people love while at the same time thinking outside of the box. I have enjoyed creating since I was a child. Being able to use that creative mindset is why I enjoy web development.</p>
         </div>
         <div class="servicesBox">
             <img src="resources/images/icon_pages.png" alt="">
@@ -97,7 +99,7 @@
         <div class="servicesBox">
             <img src="resources/images/icon_lightbulb.png" alt="">
             <h2>General Problem Solving</h2>
-            <p>You and me; We can get through anything together. It just takes a bit of thinking and a lot of help from Google and YouTube.</p>
+            <p>Anything is possible. It just takes a bit of thinking and a lot of help from Google and YouTube.</p>
         </div>
     </div>
 </section>
@@ -117,13 +119,13 @@
                 <div class="projectText"><b>Alex's Portfolio:</b> <br/> Personal website for my wife using HTML, CSS, and minimal JS.</div>
             </a>
         </div>
-        <div class="projectBox">
+        <!-- <div class="projectBox">
             <a href="https://fernettejs.github.io/my-app" target="_blank">
                 <img src="resources/images/React-icon.svg" alt="">
                 <div class="projectText"><b>React Project:</b> <br/> Project used to practice React.</div>
 
             </a>
-        </div>
+        </div> -->
         <div class="projectBox">
             <a href="http://operationoutlast.com" target="_blank">
                 <img src="resources/images/OperationOutlast.png" alt="">
@@ -147,19 +149,35 @@
     <!-- <div class="heading">
         <a href="#" class="btn">View More</a>
     </div> -->
-
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- BLOG -->
+
+<section class="blog" id="blog">
+    <div class="heading">
+        <h2>Blog</h2>
+        <p>Where I talk to myself about what the hell I'm doing.</p>
+        <p class="tinyText">It helps keep me accountable. Don't judge.</p>
+    </div>
+    <div class="blogContent">
+        <div class="blogBox">
+            <a href="blog/blog1.html" target="_blank">
+                <img src="resources/images/why.jpg" alt="">
+                    <div class="blogText">You're really starting a blog?</div>
+            </a>
+        </div>
+        <div class="blogBox">
+                    <div class="blogText">More to come...</div>
+        </div>
+    </div>
+</section>
 
 <!-- CONTACT -->
 
-    <!-- Contact -->
-
     <section class="contact" id="contact">
         <div class="heading">
-            <h2>Contact </h2>
-            <p>Get ahold of me... please. I need friends.</p>
+            <h2>Contact</h2>
+            <p>Get ahold of me... please.</p>
         </div>
         <div class="content">
             <div class="contactInfo">

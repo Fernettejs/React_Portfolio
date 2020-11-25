@@ -10,3 +10,14 @@ function toggleMenu(){
     menuToggle.classList.toggle('active')
     menu.classList.toggle('active')
 }
+
+$(document).ready(function() {
+    
+    $("#webDev").hover(function() {
+        $( this ).css( "color", "red" );
+      }, function() {
+        $( this ).css( "color", "" );
+      }
+    );
+});
+
