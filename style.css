@@ -5,12 +5,12 @@
     scroll-behavior: smooth;
     font-family: futura;
 }
-
-/* HEADER */
-
 section{
     padding: 100px;
 }
+
+/* HEADER */
+
 .banner{
     position: relative;
     min-height: 100vh;
@@ -172,11 +172,12 @@ img{
 }
 .project .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .project .content .projectBox {
-    width: 50%;
+    width: 400px;
+    height: 400px;
     padding: 20px;
     position: relative;
     text-align: center;
@@ -211,6 +212,9 @@ img{
 .projectBox:hover .projectText{
     visibility: visible;
     opacity: 1;
+}
+.projectBox:hover img{
+    filter: opacity(.3);
 }
 /* .projectText:hover img {
     opacity: .2;
@@ -267,6 +271,56 @@ img{
     min-width: 40%;
 } */
 
+/* BLOG */
+
+.tinyText {
+    font-size: 12px;
+    opacity: 60%;
+}
+.blogContent {
+    width: 100%;
+    height: 180px;
+    background-color: slategray;
+    white-space:nowrap;
+    overflow: scroll;
+}
+.blogBox {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.blogBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgba(24, 39, 54, 0.65);
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    background-color: white;
+    filter: hue-rotate(220deg);
+}
+
+.blogBox a {
+    text-decoration: none;
+}
+.blogBox a{
+    color: white;
+}
+.blogBox a:hover {
+    color: rgb(27, 51, 75);
+}
+/* CONTACT */
+
+.contact{
+    background: rgb(225, 232, 247);
+}
+
 .contactInfoBox{
     position: relative;
 }
@@ -296,4 +350,33 @@ img{
     font-weight: 500;
     color: #091e2f;
     margin-bottom: 0;
+}
+
+.jumbotron{
+    height: 150px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.col-xs-3{
+    border:  rgb(33, 117, 196) solid 1px;
+    width: 100px;
+    height: 60px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.panel-heading{
+    background-color: rgb(33, 117, 196);
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    
 }
