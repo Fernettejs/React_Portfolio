@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: futura;
+}
+section{
+    padding: 100px;
+}
+
+/* HEADER */
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(24, 39, 54, 0.65), rgba(25, 30, 53, 0.65)), url(resources/images/TableTop.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    font-size: 3em;
+    color: white;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.banner h2 span{
+    font-size: 1.5em;
+}
+.banner h3{
+    font-size: 1.5em;
+    color: rgb(225, 232, 247);
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    background: rgb(27, 51, 75);
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;    
+}
+header.sticky{
+    background: rgb(225, 232, 247);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.1);
+}
+header .logo{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: #111;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header.sticky ul li a{
+    color: #111;
+}
+
+/* ABOUT ME */
+
+.about{
+    background: rgb(225, 232, 247);
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+    text-decoration: none;
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBox{
+    padding: 30px;
+}
+.contentBox span{
+    text-align: center;
+}
+.contentBox h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50{
+    min-width: 50%;
+}
+img{
+    max-width: 100%;
+}
+
+/* SERVICES */
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBox{
+    padding: 40px 20px;
+    background: #222;
+    color: white;
+    max-width: 340px;
+    min-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.services .content .servicesBox img{
+    height: 150px;
+}
+.services .content .servicesBox:hover{
+    background: rgb(228, 204, 180);
+    filter: invert(1);
+}
+.services .content .servicesBox h2{
+    font-size: 20px;
+    font-weight: 60px;
+}
+.servicesBox p{
+    padding-top: 10px;
+}
+
+/* Project */
+
+.project{
+    background: rgb(225, 232, 247);
+}
+.project .content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.project .content .projectBox {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+.project .content .projectBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgba(24, 39, 54, 0.65);
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    background-color: white;
+}
+
+.projectText{
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    padding: 32px 64px;
+    max-height: 200px;
+    overflow: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.projectBox:hover .projectText{
+    visibility: visible;
+    opacity: 1;
+}
+.projectBox:hover img{
+    filter: opacity(.3);
+}
+/* .projectText:hover img {
+    opacity: .2;
+} */
+/* .projectBox:hover img {
+    opacity: .2;
+} */
+  
+/* CONTACT */
+/* 
+.formBox{
+    min-width: 60%;
+}
+.formBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox form h3,
+.contactInfo h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBox form input,
+.formBox form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: rgb(214,214,214);
+    color: white;
+    resize: none;
+}
+.formBox form textarea{
+    min-height: 200px;
+}
+.formBox form input::placeholder,
+.formBox form textarea::placeholder{
+    color: #999;
+}
+.formBox form input[type="submit"]{
+    max-width: 100px;
+    background: #091e2f;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} */
+/* .contactInfo{
+    min-width: 40%;
+} */
+
+/* BLOG */
+
+.tinyText {
+    font-size: 12px;
+    opacity: 60%;
+}
+.blogContent {
+    width: 100%;
+    height: 180px;
+    background-color: slategray;
+    white-space:nowrap;
+    overflow: scroll;
+}
+.blogBox {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.blogBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgba(24, 39, 54, 0.65);
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    background-color: white;
+    filter: hue-rotate(220deg);
+}
+
+.blogBox a {
+    text-decoration: none;
+}
+.blogBox a{
+    color: white;
+}
+.blogBox a:hover {
+    color: rgb(27, 51, 75);
+}
+/* CONTACT */
+
+.contact{
+    background: rgb(225, 232, 247);
+}
+
+.contactInfoBox{
+    position: relative;
+}
+.contactInfoBox .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBox .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.contactInfoBox .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(27, 51, 75);
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBox .box .text h3{
+    font-weight: 500;
+    color: #091e2f;
+    margin-bottom: 0;
+}
+
+.jumbotron{
+    height: 150px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.col-xs-3{
+    border:  rgb(33, 117, 196) solid 1px;
+    width: 100px;
+    height: 60px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.panel-heading{
+    background-color: rgb(33, 117, 196);
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    
+}
