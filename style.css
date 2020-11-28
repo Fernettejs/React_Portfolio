@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: futura;
+    font-family: futura, Verdana, sans-serif;
 }
 section{
     padding: 100px;
@@ -91,6 +91,9 @@ header ul li a{
     color: #fff;
     text-decoration: none;
 }
+header ul li a:hover{
+text-decoration: underline;
+}
 header.sticky ul li a{
     color: #111;
 }
@@ -143,18 +146,23 @@ img{
 .services .content .servicesBox{
     padding: 40px 20px;
     background: #222;
-    color: white;
-    max-width: 340px;
-    min-width: 340px;
+    color: rgb(225, 232, 247);
+    width: 340px;
     margin: 20px;
     text-align: center;
     transition: 0.5s;
 }
 .services .content .servicesBox img{
     height: 150px;
+    padding-bottom: 10px;
 }
 .services .content .servicesBox:hover{
-    background: rgb(228, 204, 180);
+    background-color: rgb(27, 51, 75);
+    color: white;
+    transform: (1.1);
+    transition: .2s ease-in-out;
+}
+.services .content .servicesBox:hover img{
     filter: invert(1);
 }
 .services .content .servicesBox h2{
@@ -164,6 +172,7 @@ img{
 .servicesBox p{
     padding-top: 10px;
 }
+
 
 /* Project */
 
@@ -203,8 +212,8 @@ img{
     visibility: hidden;
     opacity: 0;
     padding: 32px 64px;
-    max-height: 200px;
-    overflow: scroll;
+    height: 300px;
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -216,6 +225,7 @@ img{
 .projectBox:hover img{
     filter: opacity(.3);
 }
+
 /* .projectText:hover img {
     opacity: .2;
 } */
@@ -273,13 +283,15 @@ img{
 
 /* BLOG */
 
+.blog{
+    background-color:white;
+}
 .tinyText {
     font-size: 12px;
     opacity: 60%;
 }
 .blogContent {
     width: 100%;
-
     height: 160px;
     background-color: rgb(225, 232, 247);
     white-space:nowrap;
@@ -317,10 +329,46 @@ img{
 .blogBox a:hover {
     color: rgb(27, 51, 75);
 }
+
+/* Network */
+
+.network{
+    background: rgb(225, 232, 247);
+}
+.network .content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.network .content .networkBox{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: rgb(225, 232, 247);
+}
+.networkText{
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    padding: 32px 64px;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 /* CONTACT */
 
 .contact{
-    background: rgb(225, 232, 247);
+    background: white;
 }
 
 .contactInfoBox{

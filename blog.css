@@ -21,11 +21,14 @@ section{
 
 }
 .content{
-    text-align: center;
+    text-align: left;
     padding: 0px 200px;
     margin-bottom: 200px;
 }
-
+h4{
+    text-align: center;
+    text-transform: uppercase;
+}
 
 
 
@@ -39,7 +42,7 @@ section{
         margin: 20px;
     }
     .content{
-        text-align: center;
+        text-align: left;
         padding: 0px 80px;
     }
 }
