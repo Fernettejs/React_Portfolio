@@ -88,6 +88,9 @@
     .project .content .projectBox {
         padding: 10px;
     }
+    .contact .content {
+        flex-direction: row;
+    }
     /* .testimonials .content .testimonialsBox {
         max-width: calc(100% - 20px);
         padding: 40px 20px;
