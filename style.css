@@ -4,6 +4,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: futura, Verdana, sans-serif;
+    --light-color:rgb(225, 232, 247);
+    --dark-color: rgb(27, 51, 75)
 }
 section{
     padding: 100px;
@@ -32,12 +34,12 @@ section{
 }
 .banner h3{
     font-size: 1.5em;
-    color: rgb(225, 232, 247);
+    color: var(--light-color);
     font-weight: 500;
 }
 .btn{
     position: relative;
-    background: rgb(27, 51, 75);
+    background: var( --dark-color);
     display: inline-block;
     color: white;
     margin-top: 20px;
@@ -101,7 +103,7 @@ header.sticky ul li a{
 /* ABOUT ME */
 
 .about{
-    background: rgb(225, 232, 247);
+    background: var(--light-color);
 }
 .heading{
     width: 100%;
@@ -134,6 +136,11 @@ header.sticky ul li a{
 img{
     max-width: 100%;
 }
+.about .btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
 
 /* SERVICES */
 
@@ -146,7 +153,7 @@ img{
 .services .content .servicesBox{
     padding: 40px 20px;
     background: #222;
-    color: rgb(225, 232, 247);
+    color: var(--light-color);
     width: 340px;
     margin: 20px;
     text-align: center;
@@ -157,7 +164,7 @@ img{
     padding-bottom: 10px;
 }
 .services .content .servicesBox:hover{
-    background-color: rgb(27, 51, 75);
+    background-color:var( --dark-color);
     color: white;
     transform: (1.1);
     transition: .2s ease-in-out;
@@ -177,7 +184,7 @@ img{
 /* Project */
 
 .project{
-    background: rgb(225, 232, 247);
+    background: var(--light-color);
 }
 .project .content {
     display: flex;
@@ -293,7 +300,7 @@ img{
 .blogContent {
     width: 100%;
     height: 160px;
-    background-color: rgb(225, 232, 247);
+    background-color: var(--light-color);
     white-space:nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -322,34 +329,30 @@ img{
 
 .blogBox a {
     text-decoration: none;
-}
-.blogBox a{
     color: white;
 }
 .blogBox a:hover {
     color: rgb(27, 51, 75);
 }
 
-/* Network */
+/* CONTACT */
 
-.network{
-    background: rgb(225, 232, 247);
+.contact{
+    background: var( --light-color);
 }
-.network .content {
+.contact .content {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
-
-.network .content .networkBox{
+.contactBox{
     height: 150px;
     width: 150px;
     border-radius: 100px;
-    background-color: rgb(225, 232, 247);
+    background-color: var(--light-color);
 }
-.networkText{
+.contactText{
     transition: .5s ease;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -366,7 +369,7 @@ img{
 }
 
 /* CONTACT */
-
+/* 
 .contact{
     background: white;
 }
@@ -429,4 +432,4 @@ img{
     height: 30px;
     line-height: 30px;
     
-}
+} */
