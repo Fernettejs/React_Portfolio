@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Comb</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/background.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER-->
+
+<header>
+    <a href="#home" class="logo">Comb</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#prduct" onclick="toggleMenu();">Product</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+</header>
+
+<!-- Banner -->
+
+<div onload="randombg()" id="background">
+    <div id="random" onclick="randombg()">
+        <section class="banner" id="home">
+            <img class="center" src="./resources/images/the_comb.png" alt="">
+            <h3>You set the trend... click anywhere!</h3>
+        </section>
+</div>
+</section>
+
+<section class="game">
+    <div class="discount">
+        <h2>Up for saving some money?</h2> 
+        <a href="game.html"><button> Click here to see if you have what it takes!</button></a>
+    </div>
+</section>
+
+<!-- PRODUCT -->
+
+<section class="product" id="product">
+    <div class="heading">
+        <h2>Get your own!</h2>
+    </div>
+    <div class="content">
+        <a href="buy.html">
+            <div class="productBox">
+                <img src="resources/images/the_comb.png" alt="">
+                <div class="productText">$9.99</div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+    <div class="heading">
+        <h2>You probably want to tell people about us.</h2>
+    </div>
+    <div class="content">
+        <div class="contactBox">
+            <a href="mailto:fernettejs@gmail.com" target="_blank">
+                <img src="resources/images/icon_email.png" alt="">
+            </a>
+        </div>
+        <div class="contactBox">
+            <a href="https://github.com/Fernettejs" target="_blank">
+                <img src="resources/images/icon_github.png" alt="">
+            </a>
+        </div>
+        <div class="contactBox">
+            <a href="https://twitter.com/JoeFernette" target="_blank">
+                <img src="resources/images/icon_twitter.png" alt="">
+            </a>
+        </div>
+</section>
+
+
+</body>
+</html>
