@@ -1,4 +1,7 @@
 /* Responsive */
+$primary-color:rgb(133, 53, 90);
+$secondary-color: rgb(184, 162, 185);
+
 
 @media (max-width: 990px){
     header,
@@ -62,6 +65,9 @@
     .banner img{
         width: 500px;
     }
+    .product img{
+        width: 500px;
+    }
     .btn{
         margin: 10px;
         padding: 10px 20px;
@@ -80,31 +86,7 @@
     .w50{
         margin-bottom: 20px;
     }
-    .services .content .servicesBox{
-        margin: 10px;
-    }
-    .project .content {
-        align-items: center;
-    }
 
-    .project .content .projectBox {
-        padding: 10px;
-    }
-    .contact .content {
-        flex-direction: row;
-    }
-    /* .testimonials .content .testimonialsBox {
-        max-width: calc(100% - 20px);
-        padding: 40px 20px;
-        margin: 10px;
-        background: rgb(244,198, 137);
-    }
-        .testimonials .content .testimonialsBox h3 {
-            margin-top: 20px;
-    } */
-    .contactInfo {
-        margin: 20px 0;
-    }
 }
 
 @media (max-width:600px){
@@ -127,5 +109,11 @@
     }
     .banner img{
         width: 400px;
+    }
+    .product img{
+        width: 400px;
+    }
+    .game{
+        width: 300px;
     }
 }

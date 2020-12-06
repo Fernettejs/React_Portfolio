@@ -24,11 +24,14 @@ body{
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+.content{
+    flex-direction: column;
+}
 
 .heading{
     text-align: center;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-
+    padding: 40px;
 }
 
 // HEADER
@@ -172,17 +175,21 @@ header.sticky ul li a{
     display: flex;
     text-align: center;
 }
+.productBox{
+    text-align: center;
+}
 .product img {
     height: 400px;
     padding: 30px;
+    height: 100%;
 }
 .productText{
     color: black;
     text-align: center;
     font-size: 18px;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-
 }
+
 
 // CONTACT
 
