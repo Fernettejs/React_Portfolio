@@ -3,191 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You Should Hire Joe Fernette</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
-    <script src="main.js"></script>
+    <title>The Comb</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/background.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
 </head>
+
 <body>
 
 <!-- HEADER-->
 
 <header>
-    <a href="#home" class="logo">Joe's Web Dev Portfolio</a>
+    <a href="#home" class="logo">Comb</a>
     <div class="toggle" onclick="toggleMenu();"></div>
     <ul class="menu">
         <li><a href="#home" onclick="toggleMenu();">Home</a></li>
         <li><a href="#about" onclick="toggleMenu();">About</a></li>
-        <li><a href="#services" onclick="toggleMenu();">Services</a></li>
-        <li><a href="#project" onclick="toggleMenu();">Projects</a></li>
-        <li><a href="#blog" onclick="toggleMenu();">Blog</a></li>
-        <!-- <li><a href="#" onclick="toggleMenu();">Testimonials</a></li> -->
+        <li><a href="#prduct" onclick="toggleMenu();">Product</a></li>
         <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
     </ul>
 </header>
 
 <!-- Banner -->
 
-<section class="banner" id="home">
-    <div class="textBox">
-        <h2>Hey there, I'm <br><span>Joe Fernette</span></h2>
-        <h3>Welcome to my
-            <span
-               class="txt-rotate"
-               data-period="2000"
-               data-rotate='[ "{coding journey}.", "{life}.", "{creations}.", "{crazy world}!" ]'></span>
-          </h3>        
-          <a href="#project" class="btn">My Projects</a>
+<div onload="randombg()" id="background">
+    <div id="random" onclick="randombg()">
+        <section class="banner" id="home">
+            <img class="center" src="./resources/images/the_comb.png" alt="">
+            <h3>You set the trend... click anywhere!</h3>
+        </section>
+</div>
+</section>
+
+<!-- DISCOUNT GAME -->
+
+<section class="gameSection">
+    <div class="discount">
+        <h2>Up for saving some money?</h2> 
+        <a href="game.html" target="_blank"><button> Click here to see if you have what it takes!</button></a>
     </div>
 </section>
 
+<!-- PRODUCT -->
 
-<!-- ABOUT ME -->
-
-<section class="about" id="about">
+<section class="product" id="product">
     <div class="heading">
-        <h2>About Me</h2>
+        <h2>Get your own!</h2>
     </div>
     <div class="content">
-        <div class="contentBox">
-            <h3>This is how I got to where I am.</h3>
-            <p>My family comes before anything. I work hard to be successful in all that I do in order to provide for and protect my family. My path to this point has included becoming a United States Marine; two combat deployments to Afghanistan; graduating from the University of Michigan with a Bachelor of Psychology; starting my own LLC with its main presence online; becoming a public safety officer; and now discovering the perfect career as a web developer. </p>
-            <br>
-            <p>I am an efficiency-driven, goal-oriented professional with problem-solving experience under a vast array of high-pressure environments. A self-starter with excellent communication, organizational and analytical skills. Demonstrated leadership skills, mentoring skills, risk assessment and management, and supervisory experience with a team of 26 personnel in the United States Marine Corps. Exceptional ability to carry out work with minimal supervision, attention to detail and the ability to work under strict deadlines. Strong verbal and written communication skills with the ability to interact with all levels of an organization. I have a great interest in what pushes people to be their best in any situation and I strive to come up with solutions to problems and improve myself and others everyday.</p>
-            <br>
-            <span>
-                <p>DRIVEN / PROBLEM SOLVER / LEADER / QUICK TO ADAPT / FOCUSED / TEAMWORK / INTEGRITY</p>
-            </span>
-
-        </div>
-        <div class="w50">
-            <img src="resources/images/joe_family.jpg" alt="">
-        </div>
-    </div>
-    <a href="resources/Web Dev Resume copy.pdf" target="_blank" class="btn">My Resume</a>
-
-</section>
-
-<!-- SERVICES -->
-
-<section class="services" id="services">
-    <div class="heading">
-        <h2>Services</h2>
-        <p>What I can provide for you and your business.</p>
-    </div>
-    <div class="content">
-        <div class="servicesBox">
-            <img src="resources/images/icon_web_dev.png" alt="">
-            <h2>Front End Web Development</h2>
-            <p>Knowledge of HTML, CSS, JavaScript, jQuery, React, Bootstrap, SASS, Wordpress, Git and more.</p>
-        </div>
-        <div class="servicesBox">
-            <img src="resources/images/icon_responsive.png" alt="">
-            <h2>Responsive Design</h2>
-            <p>Size doesn't matter here. </p>
-        </div>
-        <div class="servicesBox">
-            <img src="resources/images/icon_web_design.png" alt="">
-            <h2>Creative Design Mindset</h2>
-            <p>Being able to notice what people love while at the same time thinking outside of the box. I have enjoyed creating since I was a child. Being able to use that creative mindset is why I enjoy web development.</p>
-        </div>
-        <div class="servicesBox">
-            <img src="resources/images/icon_pages.png" alt="">
-            <h2>Content Creation</h2>
-            <p>Writing new and intriguing content that brings the people in and wanting more.</p>
-        </div>
-        <div class="servicesBox">
-            <img src="resources/images/icon_video.png" alt="">
-            <h2>Video Editing</h2>
-            <p>Creating videos that are able to change a person's emotional state is amazing. Really understanding the purpose of the video and making the endgoal happen is what I strive for.</p>
-        </div>
-        <div class="servicesBox">
-            <img src="resources/images/icon_lightbulb.png" alt="">
-            <h2>General Problem Solving</h2>
-            <p>Anything is possible. It just takes a bit of thinking and a lot of help from Google and YouTube.</p>
-        </div>
+        <a href="buy.html" target="_blank">
+            <div class="productBox">
+                <img src="resources/images/the_comb.png" alt="">
+                <div class="productText">$9.99</div>
+            </div>
+        </a>
     </div>
 </section>
 
-<!-- POJECTS -->
-
-<section class="project" id="project">
-    <div class="heading">
-        <h2>My Latest Projects</h2>
-        <p>If you have any feedback about anything, please email me. Good and bad, I want to hear it.</p>
-    </div>
-    <div class="content">
-        <div class="projectBox">
-            <a href="http://backfirstresponders.github.io/" target="_blank">
-                <img src="resources/images/alex_banner.jpg" alt="">
-                <div class="projectText"><b>Alex's Portfolio:</b> <br/><br/> Personal website for my wife using HTML, CSS, and minimal JS.</div>
-            </a>
-        </div>
-        <div class="projectBox">
-            <a href="resources/Comb/index.html" target="_blank">
-                <img src="resources/images/Screen Shot 2020-12-04 at 4.42.25 PM.png" alt="">
-                <div class="projectText"><b>The Comb</b> <br/><br/> Product page utilizing marketing strategies and visual appeal with HTML, CSS(SASS), and JS.</div>
-            </a>
-        </div>
-        <!-- <div class="projectBox">
-            <a href="https://fernettejs.github.io/my-app" target="_blank">
-                <img src="resources/images/React-icon.svg" alt="">
-                <div class="projectText"><b>React Project:</b> <br/> Project used to practice React.</div>
-            </a>
-        </div> -->
-        <div class="projectBox">
-            <a href="http://operationoutlast.com" target="_blank">
-                <img src="resources/images/OperationOutlast.png" alt="">
-                    <div class="projectText"><b>Operation Outlast:</b> <br/><br/> Wordpress website created for an LLC I began while going to college.</div>            
-                </a>
-        </div>
-        <div class="projectBox">
-            <a href="resources/More Cowbell/index.html" target="_blank">
-                <img src="resources/images/Cowbell.png" alt="">
-                <div class="projectText"><b>More Cowbell:</b> <br/><br/> First page created with HTML, CSS, and JavaScript. Simple button that plays more Cowbell!</div>
-            </a>
-        </div>
-        <div class="projectBox">
-            <a href="resources/Oliver_skateboarder/index.html" target="_blank">
-                <img src="resources/images/oliver1.jpg" alt="">
-                <div class="projectText"><b>Oliver's Epic Ride:</b> <br/><br/> Utilizing more design and different ways to showcase people's work.</div>
-            </a>
-        </div>
-    </div>
-    <!-- <div class="heading">
-        <a href="#" class="btn">View More</a>
-    </div> -->
-</section>
-
-<!-- BLOG -->
-
-<section class="blog" id="blog">
-    <div class="heading">
-        <h2>Blog</h2>
-        <p>Where I talk to myself about keeping my life in some type of order.</p>
-        <p class="tinyText">It helps keep me accountable. Don't judge.</p>
-    </div>
-    <div class="blogContent">
-        <div class="blogBox">
-            <a href="blog/blog1.html" target="_blank">
-                <img src="resources/images/why.jpg" alt="">
-                    <div class="blogText">You're really doing this?</div>
-            </a>
-        </div>
-        <div class="blogBox">
-                    <div class="blogText">More to come...</div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT-->
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
     <div class="heading">
-        <h2>Let's Connect</h2>
-        <p>Building a group of people that want to improve themselves is very important to me.</p>
+        <h2>You probably want to tell people about us.</h2>
     </div>
     <div class="content">
         <div class="contactBox">
@@ -201,57 +83,12 @@
             </a>
         </div>
         <div class="contactBox">
-            <a href="https://www.linkedin.com/in/joe-fernette/" target="_blank">
-                <img src="resources/images/icon_linkedin.png" alt="">
-            </a>
-        </div>
-        <div class="contactBox">
             <a href="https://twitter.com/JoeFernette" target="_blank">
                 <img src="resources/images/icon_twitter.png" alt="">
             </a>
         </div>
 </section>
 
-<!-- CONTACT -->
 
-    <!-- <section class="contact" id="contact">
-        <div class="heading">
-            <h2>Contact</h2>
-            <p>Get ahold of me... please.</p>
-        </div>
-        <div class="content">
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBox">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Home</h3>
-                            <p>Michigan, USA</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>(000) 555-1234</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-envelope-o"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <a href = "mailto: fernettejs@gmail.com">Fernettejs@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 </body>
 </html>
