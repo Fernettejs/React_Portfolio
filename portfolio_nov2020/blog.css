@@ -12,6 +12,7 @@ section{
 .title{
     margin-top: 100px;
     text-align: center;
+    padding: 40px;
 }
 .title img{
     height: 400px;
@@ -20,7 +21,28 @@ section{
 
 }
 .content{
-    text-align: center;
+    text-align: left;
     padding: 0px 200px;
     margin-bottom: 200px;
+}
+h4{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 991px){
+    img{
+        width: 300px;
+        max-height: 250px;
+        margin: 20px;
+    }
+    .content{
+        text-align: left;
+        padding: 0px 80px;
+    }
 }

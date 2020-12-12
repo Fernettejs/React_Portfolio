@@ -15,7 +15,7 @@
 <!-- HEADER-->
 
 <header>
-    <a href="#home" class="logo">Joe's Portfolio</a>
+    <a href="#home" class="logo">Joe's Web Dev Portfolio</a>
     <div class="toggle" onclick="toggleMenu();"></div>
     <ul class="menu">
         <li><a href="#home" onclick="toggleMenu();">Home</a></li>
@@ -33,8 +33,13 @@
 <section class="banner" id="home">
     <div class="textBox">
         <h2>Hey there, I'm <br><span>Joe Fernette</span></h2>
-        <h3>Welcome to my coding journey.</h3>
-        <a href="#about" class="btn">About Me</a>
+        <h3>Welcome to my
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "{coding journey}.", "{life}.", "{creations}.", "{crazy world}!" ]'></span>
+          </h3>        
+          <a href="#project" class="btn">My Projects</a>
     </div>
 </section>
 
@@ -61,6 +66,8 @@
             <img src="resources/images/joe_family.jpg" alt="">
         </div>
     </div>
+    <a href="resources/Web Dev Resume copy.pdf" target="_blank" class="btn">My Resume</a>
+
 </section>
 
 <!-- SERVICES -->
@@ -71,7 +78,7 @@
         <p>What I can provide for you and your business.</p>
     </div>
     <div class="content">
-        <div class="servicesBox" id="webDev">
+        <div class="servicesBox">
             <img src="resources/images/icon_web_dev.png" alt="">
             <h2>Front End Web Development</h2>
             <p>Knowledge of HTML, CSS, JavaScript, jQuery, React, Bootstrap, SASS, Wordpress, Git and more.</p>
@@ -104,7 +111,6 @@
     </div>
 </section>
 
-
 <!-- POJECTS -->
 
 <section class="project" id="project">
@@ -116,35 +122,46 @@
         <div class="projectBox">
             <a href="http://backfirstresponders.github.io/" target="_blank">
                 <img src="resources/images/alex_banner.jpg" alt="">
-                <div class="projectText"><b>Alex's Portfolio:</b> <br/> Personal website for my wife using HTML, CSS, and minimal JS.</div>
-            </a>
-        </div>
-        <!-- <div class="projectBox">
-            <a href="https://fernettejs.github.io/my-app" target="_blank">
-                <img src="resources/images/React-icon.svg" alt="">
-                <div class="projectText"><b>React Project:</b> <br/> Project used to practice React.</div>
-
-            </a>
-        </div> -->
-        <div class="projectBox">
-            <a href="http://operationoutlast.com" target="_blank">
-                <img src="resources/images/OperationOutlast.png" alt="">
-                    <div class="projectText"><b>Operation Outlast:</b> <br/> Wordpress website created for an LLC I began while going to college.</div>            </a>
-        </div>
-        <div class="projectBox">
-            <a href="resources/More Cowbell/index.html" target="_blank">
-                <img src="resources/images/Cowbell.png" alt="">
-                <div class="projectText"><b>More Cowbell:</b> <br/> First page created with HTML, CSS, and JavaScript. Simple button that plays more Cowbell!</div>
-
+                <div class="projectText"><b>Alex's Portfolio:</b> <br/><br/> Personal website for my wife using HTML, CSS, and minimal JS.</div>
             </a>
         </div>
         <div class="projectBox">
             <a href="resources/Oliver_skateboarder/index.html" target="_blank">
                 <img src="resources/images/oliver1.jpg" alt="">
-                <div class="projectText"><b>Oliver's Epic Ride</b> <br/> Utilizing more design and different ways to showcase people's work.</div>
-
+                <div class="projectText"><b>Oliver's Epic Ride:</b> <br/><br/> Utilizing more design and different ways to showcase people's work.</div>
             </a>
         </div>
+        <div class="projectBox">
+            <a href="https://fernettejs.github.io/twitter-app" target="_blank">
+                <img src="resources/images/react-twitter.png" alt="">
+                <div class="projectText"><b>React Twitter Clone:</b> <br><br/> Project used to practice building with React. With integrated real-time twitter feed.</div>
+            </a>
+        </div>
+        <!-- <div class="projectBox">
+            <a href="resources/Comb/index.html" target="_blank">
+                <img src="resources/images/Screen Shot 2020-12-04 at 4.42.25 PM.png" alt="">
+                <div class="projectText"><b>The Comb</b> <br/><br/> Product page utilizing marketing strategies and visual appeal with HTML, CSS(SASS), and JS.</div>
+            </a>
+        </div> -->
+        <!-- <div class="projectBox">
+            <a href="https://fernettejs.github.io/my-app" target="_blank">
+                <img src="resources/images/React-icon.svg" alt="">
+                <div class="projectText"><b>React Project:</b> <br/> Project used to practice React.</div>
+            </a>
+        </div> -->
+        <div class="projectBox">
+            <a href="http://operationoutlast.com" target="_blank">
+                <img src="resources/images/OperationOutlast.png" alt="">
+                    <div class="projectText"><b>Operation Outlast:</b> <br/><br/> Wordpress website created for an LLC I began while going to college.</div>            
+                </a>
+        </div>
+        <div class="projectBox">
+            <a href="resources/More Cowbell/index.html" target="_blank">
+                <img src="resources/images/Cowbell.png" alt="">
+                <div class="projectText"><b>More Cowbell:</b> <br/><br/> First page created with HTML, CSS, and JavaScript. Simple button that plays more Cowbell!</div>
+            </a>
+        </div>
+
     </div>
     <!-- <div class="heading">
         <a href="#" class="btn">View More</a>
@@ -156,14 +173,14 @@
 <section class="blog" id="blog">
     <div class="heading">
         <h2>Blog</h2>
-        <p>Where I talk to myself about what the hell I'm doing.</p>
+        <p>Where I talk to myself about keeping my life in some type of order.</p>
         <p class="tinyText">It helps keep me accountable. Don't judge.</p>
     </div>
     <div class="blogContent">
         <div class="blogBox">
             <a href="blog/blog1.html" target="_blank">
                 <img src="resources/images/why.jpg" alt="">
-                    <div class="blogText">You're really starting a blog?</div>
+                    <div class="blogText">You're really doing this?</div>
             </a>
         </div>
         <div class="blogBox">
@@ -172,9 +189,39 @@
     </div>
 </section>
 
+<!-- CONTACT-->
+
+<section class="contact" id="contact">
+    <div class="heading">
+        <h2>Let's Connect</h2>
+        <p>Building a group of people that want to improve themselves is very important to me.</p>
+    </div>
+    <div class="content">
+        <div class="contactBox">
+            <a href="mailto:fernettejs@gmail.com" target="_blank">
+                <img src="resources/images/icon_email.png" alt="">
+            </a>
+        </div>
+        <div class="contactBox">
+            <a href="https://github.com/Fernettejs" target="_blank">
+                <img src="resources/images/icon_github.png" alt="">
+            </a>
+        </div>
+        <div class="contactBox">
+            <a href="https://www.linkedin.com/in/joe-fernette/" target="_blank">
+                <img src="resources/images/icon_linkedin.png" alt="">
+            </a>
+        </div>
+        <div class="contactBox">
+            <a href="https://twitter.com/JoeFernette" target="_blank">
+                <img src="resources/images/icon_twitter.png" alt="">
+            </a>
+        </div>
+</section>
+
 <!-- CONTACT -->
 
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
         <div class="heading">
             <h2>Contact</h2>
             <p>Get ahold of me... please.</p>
@@ -192,7 +239,7 @@
                             <p>Michigan, USA</p>
                         </div>
                     </div>
-                    <!-- <div class="box">
+                    <div class="box">
                         <div class="icon">
                             <i class="fa fa-phone"></i>
                         </div>
@@ -200,7 +247,7 @@
                             <h3>Phone</h3>
                             <p>(000) 555-1234</p>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="box">
                         <div class="icon">
                             <i class="fa fa-envelope-o"></i>
@@ -212,15 +259,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="formBox">
-                <form action="">
-                    <h3>Message Me</h3>
-                    <input type="text" name="" placeholder="Full Name">
-                    <input type="email" name="" placeholder="Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send">
-                </form>
-            </div> -->
-        </div>
+        </div> -->
 </body>
 </html>
