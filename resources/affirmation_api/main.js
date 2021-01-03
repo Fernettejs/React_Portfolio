@@ -1,4 +1,11 @@
-const aff_url = "https://www.affirmations.dev";
+if ('speechSynthesis' in window) {
+  // Speech Synthesis supported 🎉
+ }else{
+   // Speech Synthesis Not Supported 😣
+   alert("Sorry, your browser doesn't support text to speech!");
+ }
+
+const aff_url = "https://cors-anywhere.herokuapp.com/https://www.affirmations.dev"; // https://github.com/Rob--W/cors-anywhere
 async function getAff() {
     const response = await fetch(aff_url);
     const data = await response.json();
@@ -15,17 +22,4 @@ async function getAff() {
 getAff();
 
 
-var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-targetUrl = 'http://catfacts-api.appspot.com/api/facts?number=99'
-fetch(proxyUrl + targetUrl)
-.then(blob => blob.json())
-.then(data => {
-console.table(data);
-document.querySelector("pre").innerHTML = JSON.stringify(data, null, 2);
-return data;
-})
-.catch(e => {
-console.log(e);
-return e;
-});
 
