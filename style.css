@@ -7,6 +7,7 @@
     --light-color:rgb(225, 232, 247);
     --dark-color: rgb(27, 51, 75)
 }
+
 section{
     padding: 100px;
 }
@@ -49,7 +50,14 @@ section{
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 500;
+    border-radius: 5px;
 }
+.btn:hover {
+    transform: scale(1.03);
+    transition: .2s ease-in-out;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
 header{
     position: fixed;
     top: 0;
@@ -135,6 +143,8 @@ header.sticky ul li a{
 }
 img{
     max-width: 100%;
+    border-radius: 10px;
+
 }
 .about .btn {
     display: block;
@@ -158,6 +168,7 @@ img{
     margin: 20px;
     text-align: center;
     transition: 0.5s;
+    border-radius: 10px;
 }
 .services .content .servicesBox img{
     height: 150px;
@@ -166,8 +177,10 @@ img{
 .services .content .servicesBox:hover{
     background-color:var( --dark-color);
     color: white;
-    transform: (1.1);
+    transform: scale(1.05);
     transition: .2s ease-in-out;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.25);
+
 }
 .services .content .servicesBox:hover img{
     filter: invert(1);
@@ -181,7 +194,7 @@ img{
 }
 
 
-/* Project */
+/* PROJECTS */
 
 .project{
     background: var(--light-color);
@@ -197,6 +210,7 @@ img{
     padding: 20px;
     position: relative;
     text-align: center;
+
 }
 .project .content .projectBox img {
     width: 100%;
@@ -208,6 +222,9 @@ img{
     transition: .5s ease;
     backface-visibility: hidden;
     background-color: white;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
 }
 
 .projectText{
@@ -228,9 +245,11 @@ img{
 .projectBox:hover .projectText{
     visibility: visible;
     opacity: 1;
+    border-radius: 10px;
 }
 .projectBox:hover img{
     filter: opacity(.3);
+
 }
 
 /* .projectText:hover img {
@@ -304,6 +323,8 @@ img{
     white-space:nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
+    border-radius: 10px;
+
 }
 .blogBox {
     display: inline-block;
