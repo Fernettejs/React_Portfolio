@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Should Hire Joe Fernette</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<!-- HEADER-->
+
+<header>
+    <a href="#home" class="logo">Joe's Web Dev Portfolio</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+        <li><a href="#project" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#blog" onclick="toggleMenu();">Blog</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+</header>
+
+<!-- Banner -->
+
+<section class="banner" id="home">
+    <div class="textBox">
+        <h2>Hey there, I'm <br><span>Joe Fernette</span></h2>
+        <h3>Welcome to my
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "coding journey.","creations.", "life."]'></span>
+          </h3>        
+          <a href="#project" class="btn">My Projects</a>
+    </div>
+</section>
+
+
+<!-- ABOUT ME -->
+
+<section class="about" id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+    </div>
+    <div class="content">
+        <div class="contentBox">
+            <h3>This is how I got to where I am.</h3>
+            <p>I work hard to be successful in all that I do in order to provide for and protect my family. 
+                My path up to this point has been an exciting and fulfulling one. It has included becoming a United States Marine;
+                two combat deployments to Afghanistan; graduating from the University of Michigan with a bachelor's degree; 
+                starting my own Limited Liability Company with a main presence online; becoming a public safety officer; 
+                and now discovering the perfect career as a web developer. I am excited to take my drive into this career and
+                I don't plan on slowing down anytime soon.</p>
+            <br>
+            <p>I am an efficiency-driven, goal-oriented professional with problem-solving experience under a vast array 
+                of high-pressure environments. A self-starter with excellent communication, organizational and analytical skills. 
+                Demonstrated leadership skills, mentoring skills, risk assessment and management, and supervisory experience with 
+                a team of 26 personnel in the United States Marine Corps. Exceptional ability to carry out work with minimal 
+                supervision, attention to detail and the ability to work under strict deadlines. Strong verbal and written 
+                communication skills with the ability to interact with all levels of an organization. 
+                I have a great interest in what pushes people to be their best in any situation and I strive to come up with 
+                solutions to problems and improve myself and others everyday.</p>
+            <br>
+            <span>
+                <p>DRIVEN / PROBLEM SOLVER / LEADER / QUICK TO ADAPT / FOCUSED / TEAMWORK / INTEGRITY</p>
+            </span>
+
+        </div>
+        <div class="w50">
+            <img src="resources/images/joe_family.jpg" alt="">
+        </div>
+    </div>
+    <a href="resources/Web Developer Resume 2021.pdf" target="_blank" class="btn">My Resume</a>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+    <div class="heading">
+        <h2>Services</h2>
+        <p>This is what I do.</p>
+    </div>
+    <div class="content">
+        <div class="servicesBox">
+            <img src="resources/images/icon_responsive.png" alt="">
+            <h2>HTML & CSS Responsive Web Design</h2>
+            <p>Websites that are user friendly, visually appealing, and work across various platforms and devices.</p>
+        </div>
+        <div class="servicesBox">
+            <img src="resources/images/icon_web_dev.png" alt="">
+            <h2>JavaScript</h2>
+            <p>The ability to get interactive with JavaScript along with jQuery and DOM manipluation skills.
+                Intermediate skills working with <strong>React</strong> and <strong>Vue</strong> frameworks.
+            </p>
+        </div>
+        <div class="servicesBox">
+            <img src="resources/images/icon_web_design.png" alt="">
+            <h2>Behind The Scenes</h2>
+            <p>Use of Git and GitHub, Node.js, APIs and Google.</p>
+        </div>
+        <div class="servicesBox">
+            <img src="resources/images/icon_lightbulb.png" alt="">
+            <h2>Problem Solving</h2>
+            <p>Able to <strong>troubleshoot</strong> and <strong>debug</strong> when the pressure is on. These are the challenges I live for.
+                We grow from every problem we face and I am driven to learn and always improve as a developer.
+            </p>
+        </div>
+        <div class="servicesBox">
+            <img src="resources/images/icon_handshake.png" alt="">
+            <h2>Customer Relations</h2>
+            <p>From the fields in Afghanistan to the customers of my LLC; I have enjoyed working with a wide variety of personnel.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- POJECTS -->
+
+<section class="project" id="project">
+    <div class="heading">
+        <h2>My Latest Projects</h2>
+        <p>Repositories at <a target="_blank" href="https://github.com/Fernettejs">github.com/Fernettejs</a>. </p>
+    </div>
+    <div class="content">
+        <div class="projectBox">
+            <a href="http://backfirstresponders.github.io/" target="_blank">
+                <img src="resources/images/alex_banner.jpg" alt="">
+                <div class="projectText"><b>Alex's Portfolio:</b> <br/><br/> Personal website for my wife using HTML, CSS, and minimal JS.</div>
+            </a>
+            <a class="github-link" target="_blank" href="https://github.com/Fernettejs/Alex">GitHub: Alex's Portfolio</a>
+        </div>
+        <div class="projectBox">
+            <a href="resources/js-game/index.html" target="_blank">
+                <img src="resources/images/js-car-game.png" alt=""> 
+                <div class="projectText"><b>JavaScript Car Game</b> <br/><br/> Simple game with primary focus on JavaScript (so don't hate on the lack of design).</div>
+            </a>
+            <a class="github-link" target="_blank" href="https://github.com/Fernettejs/js-game">GitHub: JavaScript Car Game</a>
+        </div>
+        <div class="projectBox">
+            <a href="resources/affirmation_api/index.html" target="_blank">
+                <img src="resources/images/mountain_pink.jpg" alt="">
+                <div class="projectText"><b>Affimation API:</b> <br/><br/> Single page that pulls affirmations from an API and reads it outloud to the user.</div>
+            </a>
+            <a class="github-link" target="_blank" href="https://github.com/Fernettejs/affirmation_api">GitHub: Affimation API</a>
+        </div>
+        <div class="projectBox">
+            <a href="resources/Oliver_skateboarder/index.html" target="_blank">
+                <img src="resources/images/oliver1.jpg" alt="">
+                <div class="projectText"><b>Oliver's Epic Ride:</b> <br/><br/> Utilizing more design and different ways to showcase people's work.</div>
+            </a>
+            <a class="github-link" target="_blank" href="https://github.com/Fernettejs/Oliver">GitHub: Oliver's Epic Ride</a>
+        </div>
+        <div class="projectBox">
+            <a href="https://fernettejs.github.io/twitter-app" target="_blank">
+                <img src="resources/images/react-twitter.png" alt="">
+                <div class="projectText"><b>React Twitter Clone:</b> <br><br/> Project used to practice building with React. With integrated real-time twitter feed.</div>
+            </a>
+            <a class="github-link" target="_blank" href="https://github.com/Fernettejs/twitter-app">GitHub: React Twitter Clone</a>
+        </div>
+        <!-- <div class="projectBox">
+            <a href="resources/Comb/index.html" target="_blank">
+                <img src="resources/images/Screen Shot 2020-12-04 at 4.42.25 PM.png" alt="">
+                <div class="projectText"><b>The Comb</b> <br/><br/> Product page utilizing marketing strategies and visual appeal with HTML, CSS(SASS), and JS.</div>
+            </a>
+        </div> -->
+        <div class="projectBox">
+            <a href="resources/More Cowbell/index.html" target="_blank">
+                <img src="resources/images/Cowbell.png" alt="">
+                <div class="projectText"><b>More Cowbell:</b> <br/><br/> First page created with HTML, CSS, and JavaScript. Simple button that plays more Cowbell!</div>
+            </a>
+            <a class="github-link" target="_blank" href="https://github.com/Fernettejs/MoreCowbellButton">GitHub: More Cowbell</a>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+
+<section class="blog" id="blog">
+    <div class="heading">
+        <h2>Blog</h2>
+        <p>Where I talk to myself about keeping my life in some type of order.</p>
+        <p class="tinyText">It helps keep me accountable. Don't judge.</p>
+    </div>
+    <div class="blogContent">
+        <div class="blogBox">
+            <a href="blog/blog1.html" target="_blank">
+                <img src="resources/images/why.jpg" alt="">
+                    <div class="blogText">You're really doing this?</div>
+            </a>
+        </div>
+        <div class="blogBox">
+                    <div class="blogText">More to come...</div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT-->
+
+<section class="contact" id="contact">
+    <div class="heading">
+        <h2>Let's Connect</h2>
+        <p>Building a group of people that want to improve themselves is very important to me.</p>
+    </div>
+    <div class="content">
+        <div class="contactBox">
+            <a href="mailto:fernettejs@gmail.com" target="_blank">
+                <img src="resources/images/icon_email.png" alt="">
+            </a>
+        </div>
+        <div class="contactBox">
+            <a href="https://github.com/Fernettejs" target="_blank">
+                <img src="resources/images/icon_github.png" alt="">
+            </a>
+        </div>
+        <div class="contactBox">
+            <a href="https://www.linkedin.com/in/joe-fernette/" target="_blank">
+                <img src="resources/images/icon_linkedin.png" alt="">
+            </a>
+        </div>
+        <div class="contactBox">
+            <a href="https://twitter.com/JoeFernette" target="_blank">
+                <img src="resources/images/icon_twitter.png" alt="">
+            </a>
+        </div>
+</section>
+ 
+</body>
+</html>
