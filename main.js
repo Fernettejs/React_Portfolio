@@ -1,7 +1,10 @@
 // Sticky Header
 window.addEventListener("scroll", function () {
-  var header = document.querySelector("header");
+  const header = document.querySelector("header");
+  const logo = document.querySelector(".logo");
   header.classList.toggle("sticky", window.scrollY > 0);
+  logo.classList.toggle("sticky", window.scrollY > 400);
+
 });
 
 // Menu Toggle

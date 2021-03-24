@@ -77,15 +77,22 @@ header.sticky {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 0.1);
 }
 header .logo {
-  color: white;
+  color: black;
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 2px;
 }
-header.sticky .logo {
+.logo {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.logo.sticky {
   color: #111;
+  visibility: visible;
+  opacity: 1;
 }
 header ul {
   position: relative;
