@@ -58,6 +58,15 @@
   .banner {
     padding: 150px 50px 100px;
   }
+  #profile-image {
+    height: 150px;
+    border-radius: 100%;
+  }
+  .banner h1 {
+      font-size: 52px;
+      color: white;
+      font-weight: 500;
+  }
   .btn {
     margin: 10px;
     padding: 10px 20px;

@@ -8,6 +8,9 @@
   --light-color: rgb(225, 232, 247);
   --dark-color: rgb(27, 51, 75);
 }
+html, body {
+  overflow-x: hidden;
+}
 section {
   padding: 100px;
 }
