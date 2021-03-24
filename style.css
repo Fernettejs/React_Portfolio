@@ -2,14 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.6;
   scroll-behavior: smooth;
   font-family: futura, Verdana, sans-serif;
   --light-color: rgb(225, 232, 247);
   --dark-color: rgb(27, 51, 75);
 }
-
 section {
   padding: 100px;
+}
+h1 {
+  font-size: 100px;
+  color: white;
+  font-weight: 500;
 }
 
 /* HEADER */
@@ -22,8 +27,13 @@ section {
   background-size: cover;
   background-position: top;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+}
+#profile-image {
+  height: 250px;
+  border-radius: 100%;
 }
 .banner h2 {
   font-size: 3em;
@@ -38,6 +48,10 @@ section {
   font-size: 1.5em;
   color: var(--light-color);
   font-weight: 500;
+}
+.banner h4 {
+  margin-top: -16px;
+  margin-bottom: 20px;
 }
 .btn {
   position: relative;
